@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.first-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    transition: ease-in 2s;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.createLiftFloorButton {
+    margin-top: 1rem;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    border: 2px solid var(--color-gray-400);
+    cursor: pointer;
+}
+.second-page {
+    display: none;
+    margin: 4% auto;
+}
+.buttonLift {
+    display: flex;
+}
+.button {
+    display: flex;
+    width: 30px;
+    margin: 10px 20px;
+    flex-direction: column;
+}
+.button button{
+    margin: 2px;
+ }
+.up{
+    font-size: 13px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    background-color: white;
+    cursor: pointer;
+}
+.down{
+    font-size: 13px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    background-color: white;
+    cursor: pointer;
+}
+.up:hover{
+    background-color: black;
+    color: white;
+}
+.down:hover{
+    background-color: black;
+    color: white;
+}
+h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+h2 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+hr{
+    flex-grow:1;
+    height: 1px;
+    border-top: 2px solid black;
+} 
+.hrfloorName{
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+}
+.mainLift{
+    display: flex;
+    margin-left: 10px;
+}
+.lift{
+    width: 50px;
+    height: 60px;
+    background-color: var(--color-gray-400);
+    border: 2px solid black;
+    margin-right: 5px;
+    transition-property:transform;
+    transition-timing-function:ease-in;
+}
+.gates{
+    display: flex;
+}
+.gate1 , .gate2{
+    width: 25px;
+    height: 60px;
+    margin: 1px;
+    background-color:darkgray;
+    transition: width 2.5s ease-in-out;
+}
