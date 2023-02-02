@@ -104,3 +104,27 @@ hr{
     background-color:darkgray;
     transition: width 2.5s ease-in-out;
 }
+/* .move-left {
+    transform: translateX(-100%);
+    transition: 2s;
+}
+.move-right {
+    transform: translateX(100%);
+    transition: 2s;
+}
+.move {
+    transform: translateY(-100%);
+    transition: 2.5s;
+} */
+/* .move {
+    /* transform: translateY(-100%); */
+    /* transition: 2.5s; */
+    /* animation-name: liftmove;
+    animation-duration: 3s; */
+    /* transform: translateY(-100px);
+    transition: 2.5s; */
+/* } */
+/* @keyframes liftmove {
+    from {bottom: 0px;}
+    to {top: 150px};
+} */
