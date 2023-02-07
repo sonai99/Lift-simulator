@@ -1,26 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="app.css">
-</head>
-<body>
-    <div class="first-page">
-        <h1>Lift Simulator</h1>
-        <div class="noOfFloor input-container">
-            <label for="floorNumber">Enter the no of Floors</label>
-            <input type="Number" id="floorNumber" placeholder="Enter upto 7 floors" required/>
-        </div>
-        <div class="noOfLift input-container">
-            <label for="liftNumber">Enter the no of Lifts</label>
-            <input type="Number" id="liftNumber" placeholder="Enter upto 4 lifts" required>
-        </div>
-        <button class="createLiftFloorButton">Create</button>
-    </div>
-    <div class="second-page"></div>
-    <script src="app.js"></script>
-</body>
-</html>
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+label {
+    text-align: center;
+    margin-top: 2px;
+}
+.firstPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    transition: ease-in 2s;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+.createLiftFloorButton {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: white;
+
+}
+.secondPage {
+    display: none;
+    margin: 4% auto;
+}
+.buttonLift {
+    display: flex;
+}
+.button {
+    display: flex;
+    width: 40px;
+    margin: 10px 20px;
+    flex-direction: column;
+}
+.button button{
+    margin-top: 2px;
+ }
+.up{
+    font-size: 13px;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    background-color: white;
+    cursor: pointer;
+}
+.down{
+    font-size: 13px;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    background-color: white;
+    cursor: pointer;
+}
+.up:hover{
+    background-color: black;
+    color: white;
+}
+.down:hover{
+    background-color: black;
+    color: white;
+}
+h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+h2 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+hr{
+    flex-grow:1;
+    margin-left: 2px;
+    height: 1px;
+    border-top: 2px solid black;
+} 
+.floor {
+    /* background-color: black; */
+    flex-direction: column;
+    height: 100%;
+}
+.FloorName{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+}
+.mainLift{
+    display: flex;
+    margin-left: 10px;
+}
+.lift{
+    width: 50px;
+    height: 60px;
+    background-color: var(--color-gray-400);
+    border: 2px solid black;
+    margin-right: 5px;
+    transition-property:transform;
+    transition-timing-function:ease-in;
+}
+.gates{
+    display: flex;
+}
+.gate1 {
+    width: 50px;
+    height: 60px;
+    background-color:#72A0C1;
+    transition: width 2.5s ease-in-out;
+}
+/* .move-left {
+    transform: translateX(-100%);
+    transition: 2s;
+}
+.move-right {
+    transform: translateX(100%);
+    transition: 2s;
+}
+.move {
+    transform: translateY(-100%);
+    transition: 2.5s;
+} */
+/* .move {
+    /* transform: translateY(-100%); */
+    /* transition: 2.5s; */
+    /* animation-name: liftmove;
+    animation-duration: 3s; */
+    /* transform: translateY(-100px);
+    transition: 2.5s; */
+/* } */
+/* @keyframes liftmove {
+    from {bottom: 0px;}
+    to {top: 150px};
+} */
+
