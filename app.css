@@ -97,10 +97,10 @@ hr{
 .gates{
     display: flex;
 }
-.gate1 , .gate2{
-    width: 25px;
+.gate1 {
+    width: 50px;
     height: 60px;
-    margin: 1px;
+    /* margin: 1px; */
     background-color:darkgray;
     transition: width 2.5s ease-in-out;
 }
@@ -128,3 +128,4 @@ hr{
     from {bottom: 0px;}
     to {top: 150px};
 } */
+
