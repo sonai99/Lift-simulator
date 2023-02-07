@@ -145,7 +145,7 @@ lastBox.appendChild(mainLift);
 let allLift = document.querySelectorAll('.lift');
 let up = document.querySelectorAll('.up');
 let down = document.querySelectorAll('.down');
-console.log(allLift);
+// console.log(allLift);
 
 let oldFloor = [];
 for(let j=0;j<allLift.length;j++){
@@ -193,9 +193,9 @@ down.forEach((e,i)=>{
     });
 })
 function moveLift(currentLiftNo,floorNo,oldFloorValue){
-    console.log("Current Lift",currentLiftNo.firstChild);
+    console.log("Current Lift",currentLiftNo);
     console.log("Current Floor",floorNo);
-    currentLiftNo.style.transform = `translateY(${-95 * (floorNo - 1)}px)`;
+    currentLiftNo.style.transform = `translateY(${-85 * (floorNo - 1)}px)`;
     currentLiftNo.style.transitionDuration = '2s';
     
     setTimeout(()=>{
@@ -282,4 +282,3 @@ function gateopenclose(currentLiftNo){
 //     }, 3500)
 // }
 }
-
