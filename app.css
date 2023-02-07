@@ -2,7 +2,20 @@
     margin: 0;
     padding: 0;
 }
-.first-page {
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+label {
+    text-align: center;
+    margin-top: 2px;
+}
+.firstPage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,14 +28,23 @@
     flex-direction: column;
     margin-bottom: 1rem;
 }
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 2px;
+}
 .createLiftFloorButton {
     margin-top: 1rem;
-    padding: 5px 10px;
     font-size: 1.5rem;
-    border: 2px solid var(--color-gray-400);
     cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: white;
+
 }
-.second-page {
+.secondPage {
     display: none;
     margin: 4% auto;
 }
@@ -73,13 +95,19 @@ h2 span {
 }
 hr{
     flex-grow:1;
+    margin-left: 2px;
     height: 1px;
     border-top: 2px solid black;
 } 
-.hrfloorName{
+.floor {
+    /* background-color: black; */
+    flex-direction: column;
+    height: 100%;
+}
+.FloorName{
     display: flex;
-    flex-direction: row;
-    margin: 3px;
+    flex-direction: column;
+    margin-left: 4px;
 }
 .mainLift{
     display: flex;
@@ -100,7 +128,7 @@ hr{
 .gate1 {
     width: 50px;
     height: 60px;
-    background-color:darkgray;
+    background-color:#72A0C1;
     transition: width 2.5s ease-in-out;
 }
 /* .move-left {
