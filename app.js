@@ -6,8 +6,8 @@ simulate.addEventListener("click", (e)=>{
     let floorInputValue = document.querySelector('#floorNumber').value;
     let liftInputValue = document.querySelector('#liftNumber').value;
     // console.log(floorInputValue,liftInputValue);
-    document.querySelector('.first-page').style.display = 'none';
-    document.querySelector('.second-page').style.display = 'block';
+    document.querySelector('.firstPage').style.display = 'none';
+    document.querySelector('.secondPage').style.display = 'block';
     generateFloors();
 })
 
@@ -17,8 +17,8 @@ function generateFloors() {
     let liftInput = document.querySelector('#liftNumber').value;
 
     for(let i=floorInput; i>0; i--){
-        let floorDiv = document.createElement('div');
-        floorDiv.className = 'floorDiv';
+        let floor = document.createElement('div');
+        floor.className = 'floor';
 
         let buttonLift = document.createElement('div');
         buttonLift.className = 'buttonLift';
@@ -44,11 +44,11 @@ function generateFloors() {
         buttonDiv1.appendChild(button2);
 
         buttonLift.appendChild(buttonDiv1);
-        floorDiv.appendChild(buttonLift);
+        floor.appendChild(buttonLift);
 
         //create horizontal lines for floors
         let hrdiv = document.createElement('div');
-        hrdiv.className = 'hrfloorName';
+        hrdiv.className = 'FloorName';
 
         let hr = document.createElement('hr');
         
@@ -57,14 +57,14 @@ function generateFloors() {
 
         hrdiv.appendChild(hr);
         hrdiv.appendChild(spanFloorNo);
-        floorDiv.appendChild(hrdiv);
+        floor.appendChild(hrdiv);
         
         // console.log(buttonDiv1.parentNode);
         // button1.addEventListener("click", function(){
         //     console.log("button clicked", button1.id);
         // })
 
-        document.querySelector('.second-page').appendChild(floorDiv);
+        document.querySelector('.secondPage').appendChild(floor);
         // let example = document.querySelector('up2');
         // console.log(example);
         // const mainbuttonlift = document.querySelectorAll('.buttonLift');
@@ -121,9 +121,9 @@ for(let j=0;j<liftInput;j++) {
     
     liftDiv.appendChild(gates);
     mainLift.appendChild(liftDiv);
-    // let floorDiv = document.querySelector('.floorDiv');
+    // let floor = document.querySelector('.floor');
     // function moveLift() {
-    //     console.log(floorDiv);
+    //     console.log(floor);
     //     // liftDiv.classList.add("move");
     //     // console.log('function is working');
     // }
