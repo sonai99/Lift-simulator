@@ -21,7 +21,7 @@ label {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    transition: ease-in 2s;
+    transition: width 2s;
 }
 .input-container {
     display: flex;
@@ -122,6 +122,13 @@ hr{
     transition-property:transform;
     transition-timing-function:ease-in;
 }
+.disabled-lift {
+    width: 50px;
+    height: 60px;
+    border: 3px solid red;
+    margin-right: 5px;
+    transition-property:none;
+}
 .gates{
     display: flex;
 }
@@ -155,4 +162,3 @@ hr{
     from {bottom: 0px;}
     to {top: 150px};
 } */
-
