@@ -100,6 +100,7 @@ lastBox.appendChild(mainLift);
 
 let allLift = document.querySelectorAll('.lift');
 let up = document.querySelectorAll('.up');
+let nUp=up.length;
 let down = document.querySelectorAll('.down');
 
 let oldFloor = [];
@@ -109,7 +110,7 @@ for(let j=0;j<allLift.length;j++){
 
 up.forEach((e,i)=>{
     e.addEventListener("click", ()=>{
-        let currentFloorValue = (up.length - i);
+        let currentFloorValue = (nUp - i);
         for(let i=0;i<allLift.length;i++){
 
             let currentMovingLift = allLift[i];
@@ -141,7 +142,7 @@ up.forEach((e,i)=>{
 })
 down.forEach((e,i)=>{
     e.addEventListener("click", ()=>{
-        let currentFloorValue = (up.length - i);
+        let currentFloorValue = (nUp - i);
         for(let i=0;i<allLift.length;i++){
             let currentMovingLift = allLift[i];
             let disableLiftInput = document.querySelector('#disable-lift-no').value;
